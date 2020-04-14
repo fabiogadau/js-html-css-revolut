@@ -25,6 +25,23 @@ $(document).ready( function() {
 
   });
 
+  // Visualizzo/Nascondo icona fontawesome
+  var language = $('.language');
+  var arrowDown = $('.fa-angle-down');
+  var arrowUp = $('.fa-angle-up');
+
+  language.mouseenter(function() {
+      arrowDown.removeClass('active');
+      arrowUp.addClass('active');
+  });
+
+  language.mouseleave(function() {
+    arrowUp.removeClass('active');
+    arrowDown.addClass('active');
+});
+
+
+
 
 
 
