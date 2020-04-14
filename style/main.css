@@ -8,3 +8,83 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
+
+header {
+  background-color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  max-width: 95px;
+}
+
+header li {
+  list-style: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: #a0a6ae;
+}
+
+header li a:hover {
+  color: #000;
+}
+
+.top-actions-list li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+  background-color: #eb008e;
+  padding: 12px 20px;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(210, 0, 126);
+}
+
+/* Dropdown Menu */
+.with-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Visualizzo con jQuery */
+  position: absolute;
+  top: 100%;
+  right: -50px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: #fff;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .1));
+  border-radius: 2px;
+}
+
+.dropdown-menu a:first-child {
+  margin-top: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  font-size: 14px;
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
